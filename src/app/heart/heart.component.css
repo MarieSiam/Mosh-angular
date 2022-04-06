@@ -1,0 +1,10 @@
+/* .heart{
+    cursor:pointer;
+} */
+.loved{
+    color: deeppink;
+    
+}
+.unloved{ 
+    color:#ccc;
+}

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'star',
@@ -6,15 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./star.component.css']
 })
 export class StarComponent implements OnInit {
-  isLiked= false;
 
-
-
+  
+  @Input('is-liked') isLiked=false;
+  @Output() change= new EventEmitter();
+  
   constructor() { }
 
   ngOnInit(){
   }
 onClick(){
   this.isLiked=!this.isLiked;
+  this.change.emit(this.isLiked);
+  this.change.emit({ newValue: this.isLiked })
 }
+}
+export interface LikedChangedEventArgs{
+  newValue:boolean
 }

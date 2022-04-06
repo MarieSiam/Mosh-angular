@@ -1,6 +1,16 @@
 <span 
 class = "glyphicon"
 [class.glyphicon-star]="isLiked"
-[class.glyphicon-star-empty]="!isLiked"
-(click)="onClick()"
-></span>
+    [class.glyphicon-star-empty]="!isLiked"
+    
+    (click)="onClick()"
+    ></span>
+    <!-- other way -->
+    
+    <span
+    class = "glyphicon"
+    [ngClass]="{
+        'glyphicon-star': isLiked,
+        'glyphicon-star-empty': !isLiked
+    }"
+    (click)="onClick()"></span>

@@ -14,6 +14,8 @@ import { SummaryPipe } from './summary.pipe';
 import { StarComponent } from './star/star.component';
 import { MovieComponent } from './movie/movie.component';
 import { TitleCasePipe } from './title-case.pipe';
+import { PanelComponent } from './panel/panel.component';
+import { HeartComponent } from './heart/heart.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +27,13 @@ import { TitleCasePipe } from './title-case.pipe';
     SummaryPipe,
     StarComponent,
     MovieComponent,
-    TitleCasePipe
+    TitleCasePipe,
+    PanelComponent,
+    HeartComponent
 
   ],
   imports: [
-BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     FormsModule
   ],

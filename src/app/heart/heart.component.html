@@ -1,0 +1,7 @@
+<span
+class = "glyphicon glyphicon-heart"
+[class.loved]="isLoved"
+[class.unloved]="!isLoved"
+(click)="onClick()"
+></span>
+<span class="count">{{likesCount}}</span>
