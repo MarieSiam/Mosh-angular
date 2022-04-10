@@ -37,10 +37,10 @@ the * indicate that the ngIf is gonna modify the DOM -->
     No courses yet
 </ng-template> -->
 
-<!-- other way 
+<!-- other way
 Warning, with that method the element is still in the DOM, just hidden-->
 
-<!-- <div [hidden]="courses.length==0"> 
+<!-- <div [hidden]="courses.length==0">
     List of courses
 </div>
 <div [hidden]="courses.length>0">
@@ -72,3 +72,23 @@ Warning, with that method the element is still in the DOM, just hidden-->
         {{ course.name }}
     </li>
 </ul>
+
+<zippy title="Shipping Details" class = "ship">
+    Shipping details content
+</zippy>
+<zippy title="Billing Details" class="bill">
+    Billing details content
+</zippy>
+<br>
+<br>
+<br>
+<contact-form></contact-form>
+<br>
+<br>
+<courses-form></courses-form>
+<br><br>
+<signup-form></signup-form>
+<br><br>
+<new-course-form></new-course-form>
+<br><br>
+<change-password></change-password>
